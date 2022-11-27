@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: pricingService
+netty:
+  default:
+    allocator:
+      max-order: 3
+
+discounts:
+  amount-based:
+    min-amount: 4
+    initial-percentage: 20
+    step: 5
+    max-percentage: 40
+  percentage-based:
+    percentage: 30
+    enabled: true
